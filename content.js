@@ -132,10 +132,7 @@ function initializeHighlighting() {
 function highlightLink(link) {
   link.style.color = "cyan";
   link.style.fontStyle = "italic";
-  link.style.backgroundColor = "rgba(0, 255, 255, 0.2)";
-  link.style.borderRadius = "4px";
-  link.style.padding = "2px";
-
+  link.style.fontStyle = "bold";
   link.querySelectorAll('*').forEach(child => {
     child.style.color = "cyan";
   });
