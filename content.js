@@ -130,11 +130,12 @@ function initializeHighlighting() {
 
 // 🛠 Highlight link
 function highlightLink(link) {
-  link.style.color = "cyan";
-  link.style.fontStyle = "italic";
-  link.style.fontStyle = "bold";
+  link.style.setProperty('color', 'cyan', 'important');
+  link.style.setProperty('font-style', 'italic', 'important');
+  link.style.setProperty('font-weight', 'bold', 'important');
+  
   link.querySelectorAll('*').forEach(child => {
-    child.style.color = "cyan";
+    child.style.setProperty('color', 'cyan', 'important');
   });
 }
 
