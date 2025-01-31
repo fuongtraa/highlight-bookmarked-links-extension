@@ -1,13 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Highlight Bookmarked Links",
-  "version": "1.2",
-  "description": "Highlight links on a page that match URLs bookmarked in the browser.",
+  "version": "2.0",
+  "description": "Highlight links that match bookmarked URLs in real-time.",
   "permissions": [
     "bookmarks",
     "activeTab",
-    "scripting",
-	"storage"
+    "storage"
   ],
   "background": {
     "service_worker": "background.js"
@@ -15,7 +14,8 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+	  "run_at": "document_start"
     }
   ],
   "action": {
