@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Highlight Bookmarked Links",
+  "version": "1.4",
+  "description": "Optimized extension to highlight bookmarked links with high performance.",
+  "permissions": [
+    "bookmarks",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Highlight Bookmarked Links"
+  }
+}
