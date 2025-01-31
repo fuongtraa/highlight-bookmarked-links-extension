@@ -11,11 +11,11 @@ function highlightLinks(bookmarkedComponents) {
 
     const linkKey = `${linkComponents.domain}${linkComponents.path}${linkComponents.query}`;
     if (bookmarkSet.has(linkKey)) {
-      link.style.color = "cyan";
-      link.style.fontStyle = "italic";
-      link.style.fontStyle = "bold";
-      link.querySelectorAll('*').forEach(child => {
-        child.style.color = "cyan";
+      link.style.setProperty('color', 'cyan', 'important');
+  link.style.setProperty('font-style', 'italic', 'important');
+  link.style.setProperty('font-weight', 'bold', 'important');
+  link.querySelectorAll('*').forEach(child => {
+    child.style.setProperty('color', 'cyan', 'important');
       });
     }
   });
