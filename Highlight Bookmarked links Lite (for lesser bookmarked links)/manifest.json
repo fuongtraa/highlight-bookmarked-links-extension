@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Highlight Bookmarked Links",
-  "version": "1.4",
+  "version": "1.5",
+  "update_url": "https://github.com/fuongtraa/highlight-bookmarked-links-extension/raw/refs/heads/main/Highlight%20Bookmarked%20links%20Lite%20(for%20lesser%20bookmarked%20links)/Highlight%20Bookmarked%20links%20Lite%20(for%20lesser%20bookmarked%20links).crx",
   "description": "Optimized extension to highlight bookmarked links with high performance.",
   "permissions": [
     "bookmarks",
