@@ -12,10 +12,14 @@ function highlightLinks(bookmarkedComponents) {
     const linkKey = `${linkComponents.domain}${linkComponents.path}${linkComponents.query}`;
     if (bookmarkSet.has(linkKey)) {
       link.style.setProperty('color', 'cyan', 'important');
-  link.style.setProperty('font-style', 'italic', 'important');
-  link.style.setProperty('font-weight', 'bold', 'important');
-  link.querySelectorAll('*').forEach(child => {
-    child.style.setProperty('color', 'cyan', 'important');
+      link.style.setProperty('font-style', 'italic', 'important');
+      //link.style.setProperty('font-weight', 'bold', 'important');
+      link.style.setProperty('text-decoration', 'underline', 'important');
+      link.style.setProperty('font-family', 'Limelight', 'important');
+      link.querySelectorAll('*').forEach(child => {
+        child.style.setProperty('color', 'cyan', 'important');
+        child.style.setProperty('text-decoration', 'underline', 'important');
+        child.style.setProperty('font-family', 'Limelight', 'important');
       });
     }
   });
